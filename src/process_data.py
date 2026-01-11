@@ -38,9 +38,8 @@ def clean_data(df):
         df[col] = df[col].astype(str).str.strip().str.lower()
 
     # 3. Handle Dates (Mixed Formats: YYYY-MM-DD and DD/MM/YYYY)
-    # dayfirst=True handles 30/03/2022 correctly without breaking 2022-01-29
-    df['date'] = pd.to_datetime(df['date'], dayfirst=True, errors='coerce')
-
+    # format='mixed' allows Pandas to handle both formats automatically
+    df['date'] = pd.to_datetime(df['date'], format='mixed', dayfirst=True, errors='coerce')
     # 4. Handle Outliers (Negative values)
     # Assuming negative values in 'value' are data entry errors and should be positive
     df['value'] = df['value'].abs()
