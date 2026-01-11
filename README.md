@@ -77,6 +77,6 @@ Processed data is saved in `data/processed/` in two formats:
 2. **Parquet**: For performance and preserved data types.
 
 ## 6. License and Contact
-**Author:** Data Toolkit Student  
+**Author:** Chiper Roberto-Marian
 **License:** Educational Use Only  
 **Version:** v1.0
