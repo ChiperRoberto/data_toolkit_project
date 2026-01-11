@@ -1,0 +1,10 @@
+# Data
+data/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store

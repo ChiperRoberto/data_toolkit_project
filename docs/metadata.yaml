@@ -1,0 +1,17 @@
+dataset_name: Synthetic Institutional Records
+version: 1.0
+author: Course Instructor
+contact: instructor@example.edu
+license: Educational Use Only / Restricted Internal
+date_created: 2024-01-01
+description: >
+  A synthetic dataset simulating hospital administrative records. 
+  Intentionally includes data quality issues (schema drift, mixed date formats, 
+  typos) for educational data cleaning purposes.
+files:
+  - name: records_2022.csv
+    rows: ~1200
+    schema: v1 (missing department/priority)
+  - name: records_2023.csv
+    rows: ~1200
+    schema: v2 (includes department/priority)
